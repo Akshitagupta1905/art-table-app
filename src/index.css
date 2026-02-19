@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --bg-primary: #0d0f14;
+  --bg-secondary: #13161e;
+  --bg-card: #181c26;
+  --accent-gold: #c9a84c;
+  --accent-gold-light: #e8c96a;
+  --text-primary: #f0ece0;
+  --text-muted: #8a8578;
+  --border-subtle: #252933;
+  --border-accent: #c9a84c44;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* DataTable custom styles */
+.p-datatable .p-datatable-header {
+  background: var(--bg-card) !important;
+  border: none !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background: var(--bg-secondary) !important;
+  color: var(--accent-gold) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.05em !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  border-color: var(--border-subtle) !important;
+  padding: 1rem 1.25rem !important;
+}
+
+.p-datatable .p-datatable-tbody > tr {
+  background: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-subtle) !important;
+  transition: background 0.15s ease !important;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background: #1e2230 !important;
+}
+
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+  background: #1a2235 !important;
+  color: var(--text-primary) !important;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  border-color: var(--border-subtle) !important;
+  padding: 0.875rem 1.25rem !important;
+  font-size: 0.875rem !important;
+}
+
+.p-datatable .p-paginator {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border-subtle) !important;
+  color: var(--text-primary) !important;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: var(--accent-gold) !important;
+  color: var(--bg-primary) !important;
+  border-color: var(--accent-gold) !important;
+}
+
+.p-paginator .p-paginator-element {
+  color: var(--text-primary) !important;
+}
+
+.p-paginator .p-paginator-element:hover {
+  background: var(--border-subtle) !important;
+}
+
+.p-checkbox .p-checkbox-box {
+  border-color: var(--accent-gold) !important;
+  background: transparent !important;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  background: var(--accent-gold) !important;
+  border-color: var(--accent-gold) !important;
+}
+
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+  color: var(--bg-primary) !important;
+}
+
+.p-overlaypanel {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-accent) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6) !important;
+  border-radius: 12px !important;
+}
+
+.p-overlaypanel::before,
+.p-overlaypanel::after {
+  display: none !important;
+}
+
+.p-inputtext {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border-subtle) !important;
+  color: var(--text-primary) !important;
+  border-radius: 8px !important;
+}
+
+.p-inputtext:focus {
+  border-color: var(--accent-gold) !important;
+  box-shadow: 0 0 0 2px var(--border-accent) !important;
+}
+
+.p-button.p-button-sm {
+  font-size: 0.8rem !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.p-tag {
+  font-size: 0.7rem !important;
+  border-radius: 4px !important;
+}
